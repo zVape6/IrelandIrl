@@ -8,18 +8,18 @@
     </head>
 
     <body>
-        <div>
-            <button class="rounded-square-btn">
-                <span class="btn-content">button1</span>
-            </button>
-            <button class="rounded-square-btn">
-                <span class="btn-content">button2</span>
-            </button>
-            <img class="imgtop" src="pictures/top.png">
-        </div>
-
-        <div>
-            <button id="translateButton" class="button1">Перевести на английский</button>
+        <div class="top-section">
+            <div class="top-image-container">
+                <img class="imgtop" src="pictures/top.png">
+            </div>
+            <div class="button-container">
+                <button class="rounded-square-btn">
+                    <span id="translateButton" class="btn-content">перевести на английский</span>
+                </button>
+                <button class="rounded-square-btn">
+                    <span class="btn-content">button2</span>
+                </button>
+            </div>
         </div>
         <div class="spacer"></div>
         <div>
@@ -81,6 +81,8 @@
         <button class="arrow prev">❮</button>
         <button class="arrow next">❯</button>
     </div>
+
+    <div class="spacer"></div>
 
     <!-- скрипт для смены языка -->
     <script src="Scripts/language.js"></script>
