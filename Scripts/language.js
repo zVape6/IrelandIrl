@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const title = document.getElementById('top');
 const country = document.getElementById('country');
 const desc1 = document.getElementById('desc1');
@@ -37,3 +38,4 @@ function translate() {
 }
 
 translateButton.addEventListener('click', translate);
+});
