@@ -18,7 +18,7 @@
           </a>
           <nav class="nav-links">
             <button class="rounded-square-btn">
-                <span id="translateButton">Перевести на английский</span>
+                <span id="translateButton">перевести на английский</span>
             </button>
             <a href="#">хз</a>
           </nav>
@@ -28,8 +28,8 @@
   <div class="container">
 
     <div class="section">
-      <h2>О Дублинском замке</h2>
-      <p>Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.</p>
+      <h2 id="about">О Дублинском замке</h2>
+      <p id="desc">Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.</p>
     </div>
 
     <div class="section gallery">
@@ -43,35 +43,36 @@
       </div>
 
     <div class="section">
-      <h2>Окрестности</h2>
-      <p>Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.</p>
     </div>
 
     <div class="section">
-      <h2>Карта района</h2>
+      <h2 id="mapt">Карта района</h2>
       <div id="map"></div>
     </div>
 
   </div>
 
   <div class="spacer"></div>
-
+  
+  
   <!-- скрипт для смены языка -->
-  <script src="/Scripts/language.js" defer></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-      const map = L.map('map').setView([53.3428, -6.2675], 16);
-
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; OpenStreetMap & CartoDB',
-  subdomains: 'abcd'
-}).addTo(map);
-
-L.marker([53.3428, -6.2675])
-  .addTo(map)
-  .bindPopup('Dublin Castle, Ireland')
-  .openPopup();;
-  </script>
+    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap & CartoDB',
+      subdomains: 'abcd'
+    }).addTo(map);
+    
+    L.marker([53.3428, -6.2675])
+    .addTo(map)
+    .bindPopup('Dublin Castle, Ireland')
+    .openPopup();;
+    </script>
+  <script src="sightlang.js" defer></script>
 
 </body>
 </html>

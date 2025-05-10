@@ -21,7 +21,6 @@ const texts = {
 
 let currentLanguage = localStorage.getItem('language') || 'ru';
 
-translate();
 
 function translate() {
     if (currentLanguage === 'ru') {
@@ -37,5 +36,9 @@ function translate() {
     localStorage.setItem('language', currentLanguage);
 }
 
-translateButton.addEventListener('click', translate);
+if (translateButton) {
+    translateButton.addEventListener('click', () => {
+        translate();
+    });
+}
 });
