@@ -200,9 +200,10 @@ a.image-link {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
     padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
     box-sizing: border-box;
-    position: relative;
 }
 
 .top-image-container {

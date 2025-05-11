@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TBF</title>
+  <link rel="stylesheet" href="sights.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="nav-container">
+          <a href="/index.html" class="logo">
+            <img src="/pictures/top.png" alt="IrelandIrl">
+          </a>
+          <nav class="nav-links">
+            <button class="rounded-square-btn">
+                <span id="translateButton">Перевод</span>
+            </button>
+            <a href="#">TBF</a>
+          </nav>
+        </div>
+        </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2 id="about">About</h2>
+      <p id="desc">Desc</p>
+    </div>
+
+    <div class="section gallery">
+        <div class="gallery-top">
+          <img src="/pictures/castle.png" alt="1" />
+        </div>
+        <div class="gallery-bottom">
+          <img src="/pictures/cliff.png" alt="2" />
+          <img src="/pictures/test1.png" alt="3" />
+        </div>
+      </div>
+
+    <div class="section">
+      <h2 id="surroundings">Sur</h2>
+      <p id="surdesc">Surdesc</p>
+    </div>
+
+    <div class="section">
+      <h2 id="mapt">map</h2>
+      <div id="map"></div>
+    </div>
+
+  </div>
+
+  <div class="spacer"></div>
+  
+  
+  <!-- скрипт для смены языка -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap & CartoDB',
+      subdomains: 'abcd'
+    }).addTo(map);
+    
+    L.marker([53.3428, -6.2675])
+    .addTo(map)
+    .bindPopup('Dublin Castle, Ireland')
+    .openPopup();;
+    </script>
+  <script src="/translates/republic/sightsrep/sight8.js" defer></script>
+
+</body>
+</html>
