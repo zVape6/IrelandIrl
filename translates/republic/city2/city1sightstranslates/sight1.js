@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const texts = {
         ru: {
-            button: "Перевести на английский",
+            button: "Перевод",
             about: "О Дублинском замке",
-            desc: "Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.",
+            desc: "Дублин — город, где история и современность переплетаются на каждом углу. Прогуливаясь по мощёным улочкам, вы встретите старинные пабы, в которых когда-то сидели Джойс и Уайльд, и современные арт-пространства. Сердце города — река Лиффи, через которую перекинуты живописные мосты. Вечером район Темпл-Бар очарует живой музыкой и атмосферой настоящего ирландского веселья. Дублин — город, который запомнится надолго!",
             surroundings: "Окрестности",
             surdesc: "Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.",
             mapt: "Карта района"
         },
         en: {
-            button: "Translate to Russian",
+            button: "Translate",
             about: "About Dublin Castle",
-            desc: "Dublin Castle is the historic heart of the Irish capital. Built in the 13th century on the site of an ancient Viking fortification, it served as the seat of British power in Ireland. Today, the castle is a popular attraction with magnificent halls, museums and gardens reflecting the country's rich past.",
+            desc: "Dublin is a city where history and modernity intertwine at every corner. Strolling along the cobbled streets, you'll find old pubs where Joyce and Wilde once sat, and modern art spaces. The heart of the city is the River Liffey, which is crossed by picturesque bridges. In the evening, the Temple Bar area will enchant with live music and an atmosphere of real Irish fun. Dublin is a city to remember for a long time!",
             surroundings: "Surroundings",
             surdesc: "The area around Dublin Castle is a great place to explore the historic city center. It is close to lively streets with pubs, museums and stores. The famous Grafton Street and St. Patrick's Cathedral are within walking distance. The atmosphere is lively and touristy.",
             mapt: "Map of the area"

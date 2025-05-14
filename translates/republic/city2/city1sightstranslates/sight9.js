@@ -5,29 +5,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const surroundings = document.getElementById('surroundings');
     const surdesc = document.getElementById('surdesc');
     const mapt = document.getElementById('mapt');
+    const text_part_1 = document.getElementById('text_part_1');
+    const text_part_2 = document.getElementById('text_part_2');
+    const text_part_3 = document.getElementById('text_part_3');
+    const text_part_4 = document.getElementById('text_part_4');
+    const tips = document.getElementById('tips');
 
-    
     const texts = {
         ru: {
-            button: "Перевести на английский",
-            about: "О Дублинском замке",
-            desc: "Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.",
+            button: "Перевод",
+            about: "О районе Grand Canal Dock",
+            desc: "Утром воды дока отражают стеклянные фасады офисов Google и Facebook, превращая район в калейдоскоп света. К полудню на набережной оживает движение: офисные работники спешат на бизнес-ланчи в модные кафе, а яхты покачиваются у причалов. Главная достопримечательность — волнообразный мост Сэмюэла Беккета, чьи 48 тросов напоминают струны гигантской арфы. В хорошую погоду здесь собираются уличные музыканты, а их мелодии разносятся над водой. К вечеру район преображается. У театра Bord Gáis Energy зажигаются огни, а в барах вдоль набережной начинаются джазовые джем-сейшны. Особенно атмосферно в The Marker Hotel — его терраса на крыше предлагает панорамный вид на доки и город. Этот район — как Ирландия в миниатюре: бережно хранящая прошлое, но уверенно шагающая в будущее.",
             surroundings: "Окрестности",
-            surdesc: "Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.",
-            mapt: "Карта района"
+            surdesc: "Пройдя по набережной мимо покачивающихся яхт, вы упретесь в старинные доки Боландской мельницы — теперь здесь модные лофты и арт-пространства. Через мост Hanover — и вы в квартале Ringsend с его узкими улочками и старейшей в Дублине рыбной лавкой. Особый шарм этим местам придает река: в отлив обнажаются старые деревянные сваи, напоминающие о временах, когда здесь швартовались грузовые баржи. А на закате, когда включается подсветка моста Беккета, кажется, будто гигантская арфа парит над водой.",
+            mapt: "Карта района",
+            text_part_1: "1. Лучшие часы: 7-9 утра (фотографии без толп) или 17-19 вечера (красивые закаты)",
+            text_part_2: "2. Бесплатные йога-классы у воды по субботам в 10:00",
+            text_part_3: "3. Держите сумки закрытыми - чайки воруют еду",
+            text_part_4: "4. Можно прокатиться на водном трамвай до центра города (€6, уникальные виды)",
+            tips: "Советы"
         },
         en: {
-            button: "Translate to Russian",
-            about: "About Dublin Castle",
-            desc: "Dublin Castle is the historic heart of the Irish capital. Built in the 13th century on the site of an ancient Viking fortification, it served as the seat of British power in Ireland. Today, the castle is a popular attraction with magnificent halls, museums and gardens reflecting the country's rich past.",
+            button: "Translate",
+            about: "About Grand Canal Dock",
+            desc: "In the morning, the dock waters reflect the glass facades of Google and Facebook offices, turning the area into a kaleidoscope of light. By noon, the waterfront comes alive: office workers rush for business lunches in trendy cafes, while yachts sway at the piers. The main attraction is the undulating Samuel Beckett Bridge, whose 48 cables resemble the strings of a giant harp. In good weather, street musicians gather here, and their melodies spread across the water. By evening, the area transforms. The Bord Gáis Energy Theatre lights up, and jazz jam sessions begin in the bars along the waterfront. The Marker Hotel is especially atmospheric — its rooftop terrace offers panoramic views of the docks and the city. This district is like Ireland in miniature: carefully preserving the past while confidently stepping into the future.",
             surroundings: "Surroundings",
-            surdesc: "The area around Dublin Castle is a great place to explore the historic city center. It is close to lively streets with pubs, museums and stores. The famous Grafton Street and St. Patrick's Cathedral are within walking distance. The atmosphere is lively and touristy.",
-            mapt: "Map of the area"
-        },
+            surdesc: "Walking along the promenade past swaying yachts, you'll reach the historic Boland's Mill docks — now home to trendy lofts and art spaces. Cross the Hanover Bridge — and you're in the Ringsend neighborhood with its narrow streets and Dublin's oldest fish shop. The river gives these places special charm: at low tide, old wooden pilings are exposed, reminiscent of the times when cargo barges moored here. And at sunset, when the Beckett Bridge lighting turns on, it seems as if a giant harp is hovering over the water.",
+            mapt: "Map of the area",
+            text_part_1: "1. Best times: 7-9 AM (crowd-free photos) or 5-7 PM (beautiful sunsets)",
+            text_part_2: "2. Free yoga classes by the water on Saturdays at 10:00",
+            text_part_3: "3. Keep bags closed - seagulls steal food",
+            text_part_4: "4. Take a water tram to the city center (€6, unique views)",
+            tips: "Tips"
+        },  
     };
     
     let currentLanguage = localStorage.getItem('language') || 'ru';
-    
     
     function translate() {
         if (currentLanguage === 'ru') {
@@ -42,6 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         surroundings.textContent = texts[currentLanguage].surroundings;
         surdesc.textContent = texts[currentLanguage].surdesc;
         mapt.textContent = texts[currentLanguage].mapt;
+        text_part_1.textContent = texts[currentLanguage].text_part_1;
+        text_part_2.textContent = texts[currentLanguage].text_part_2;
+        text_part_3.textContent = texts[currentLanguage].text_part_3;
+        text_part_4.textContent = texts[currentLanguage].text_part_4;
+        tips.textContent = texts[currentLanguage].tips;
         localStorage.setItem('language', currentLanguage);
     }
     
@@ -50,4 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
             translate();
         });
     }
-    });
+});

@@ -2,10 +2,10 @@ document.getElementById('1card').addEventListener('click', function() {
   window.location.href = '/MainPages/citiesrep/city2sights/sight1.html';
 });
 document.getElementById('2card').addEventListener('click', function() {
-  window.location.href = '/MainPages/citiesrep/city2sights/sight2.html';
+  window.location.href = '/MainPages/citiesrep/city2sights/sight3.html';
 });
 document.getElementById('3card').addEventListener('click', function() {
-  window.location.href = '/MainPages/citiesrep/city2sights/sight3.html';
+  window.location.href = '/MainPages/citiesrep/city2sights/sight2.html';
 });
 document.getElementById('4card').addEventListener('click', function() {
   window.location.href = '/MainPages/citiesrep/city2sights/sight4.html';
