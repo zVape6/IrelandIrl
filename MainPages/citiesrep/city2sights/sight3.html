@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Christ Church Cathedral</title>
   <link rel="stylesheet" href="sights.css" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -42,6 +42,11 @@
         </div>
       </div>
 
+      <div class="section">
+      <h2 id="tips">Советы</h2>
+      <p id="tipsi">тут советы</p>
+    </div>
+
     <div class="section">
       <h2 id="surroundings">Sur</h2>
       <p id="surdesc">Surdesc</p>
@@ -60,19 +65,19 @@
   <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    const map = L.map('map').setView([53.3435, -6.2711], 16);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
     
-    L.marker([53.3428, -6.2675])
+    L.marker([53.34350, -6.2711])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
+    .bindPopup('Christ Church Cathedral, Ireland')
     .openPopup();;
     </script>
-  <script src="/translates/republic/sightsrep/sight3.js" defer></script>
+  <script src="/IrelandIrl/translates/republic/city2/city1sightstranslates/sight3.js" defer></script>
 
 </body>
 </html>

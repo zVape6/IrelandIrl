@@ -14,8 +14,9 @@
         <img src="/pictures/top.png" alt="IrelandIrl">
       </a>
       <nav class="nav-links">
-        <a href="#">перевод</a>
-        <a href="#">хз</a>
+        <button class="rounded-square-btn">
+          <span id="translateButton">Перевод</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -56,8 +57,8 @@
 <div class="spacer"></div>
 
 <div class="hero-text">
-  <h1>Дублин</h1>
-  <p>Путешествия, развлечения и отдых в Дублине</p>
+  <h1 id="about">Дублин</h1>
+  <p id="descabout">Путешествия, развлечения и отдых в Дублине</p>
 </div>
 
   <!-- Основной контент -->
@@ -66,36 +67,36 @@
   <div class="spacer"></div>
 
     <section class="overview-section">
-      <h2>О Дублине</h2>
-      <p>Тут должно быть пару слов про сам город + чем он славится</p>
+      <h2 id="aboutcity">О Дублине</h2>
+      <p id="famous">Тут должно быть пару слов про сам город + чем он славится</p>
    </section>
       <div class="hero-textcent">
-        <h1>Лучшие места для посещения</h1>
+        <h1 id="best_places">Лучшие места для посещения</h1>
         </div>
     <section class="cards-section">
-      <h2>Лучшие парки</h2>
+      <h2 id="sights1">Исторические и архитектурные достопримечательности</h2>
       <div class="cards-grid">
         <div class="card" id="1card">
           <img src="/pictures/Дублинский замок.png" alt=" ">
           <div class="card-info">
-            <h3>Дублинский замок</h3>
-            <p>Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
+            <h3 id="place1">Дублинский замок</h3>
+            <p id="desc1">Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
           </div>
         </div>
 
         <div class="card" id="2card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place2">Тюрьма Килмэйнхем</h3>
+            <p id="desc2">очень краткое описание</p>
           </div>
         </div>
 
         <div class="card" id="3card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place3">Собор Христа</h3>
+            <p id="desc3">очень краткое описание</p>
           </div>
         </div>
 
@@ -103,30 +104,30 @@
     </section>
     <section class="cards-section">
       <h2> </h2>
-      <h2>Лучшие парки</h2>
+      <h2 id="sights2">Культурные и литературные места</h2>
       <div class="cards-grid">
 
         <div class="card" id="4card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place4">Темпл-Бар</h3>
+            <p id="desc4">очень краткое описание</p>
           </div>
         </div>
 
         <div class="card" id="5card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place5">Библиотека Честера Битти</h3>
+            <p id="desc5">очень краткое описание</p>
           </div>
         </div>
 
         <div class="card" id="6card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place6">Музей Гиннесс</h3>
+            <p id="desc6">очень краткое описание</p>
           </div>
         </div>
 
@@ -134,30 +135,30 @@
     </section>
     <section class="cards-section">
       <h2> </h2>
-      <h2>Лучшие парки</h2>
+      <h2 id="sights3">Парки и природа</h2>
       <div class="cards-grid">
 
         <div class="card" id="7card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place7">Феникс-парк</h3>
+            <p id="desc7">очень краткое описание</p>
           </div>
         </div>
 
         <div class="card" id="8card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place8">Сад воспоминаний</h3>
+            <p id="desc8">очень краткое описание</p>
           </div>
         </div>
 
         <div class="card" id="9card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place9">Северный бульвар</h3>
+            <p id="desc9">очень краткое описание</p>
           </div>
         </div>
 
@@ -168,6 +169,7 @@
 
   </main>
 
+    <script src="/translates/republic/city1_translates.js" defer></script>
     <script src="/MainPages/citiesrep/city1redir.js" defer></script>
     <script src="/Scripts/CitiesSlider.js"></script>
 
