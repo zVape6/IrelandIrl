@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Matt Molloy's Pub</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
 
@@ -22,37 +20,40 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
 
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О Пабе Мэтта Моллоя</h2>
+      <p id="desc">Порог этого паба — будто граница между мирами. Стоит переступить его — и вас обволакивает теплая смесь запахов: воска старых деревянных полов, тмина из фирменных сосисок и легкий флер столетнего виски, въевшегося в дубовые стойки. Matt Molloy's, названный в честь легендарного флейтиста The Chieftains, — не просто питейное заведение, а живой музей ирландской музыки. Это место, где время измеряется не часами, а количеством сыгранных рилов. Когда бармен гасит последнюю лампу, музыка не заканчивается — она просто засыпает до завтра в межстенных щелях, среди опилок и нотных записок.</p>
     </div>
 
     <div class="section gallery">
         <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
+          <img src="/pictures/cliff.png" alt="Matt Molloy's Pub" />
         </div>
         <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
+          <img src="/pictures/cliff.png" alt="Живая музыка в пабе" />
+          <img src="/pictures/cliff.png" alt="Интерьер паба" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1.Избегайте субботних вечеров - слишком многолюдно</p>
+      <p id="text_part_2">2.Живые сессии начинаются около 21:30</p>
+      <p id="text_part_3">3.Обязательно попробуйте 'Устрицы Моллоя' с элем (фирменное блюдо)</p>
+      <p id="text_part_4">4.Попросите бармена показать 'секретный ящик' - там хранятся ноты неизданных мелодий самого Моллоя.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">Выйдя из дверей легендарного паба, попадаешь в лабиринт улочек, где музыка не заканчивается, а лишь меняет тональность. Прямо напротив, в крошечной булочной 'Bridgie’s', хозяйка напевает ту же балладу, что час назад звучала в баре, замешивая тесто под ритм собственной дрожи. Свернув за угол на Bridge Street, обнаруживаешь 'Музыкальный мост' — старинную арку, где акустика создает эффект натурального ревербератора. Через дорогу притаился антикварный магазин 'The Tin Fiddle' — его хозяин коллекционирует сломанные инструменты. В витрине скрипка с одной струной соседствует с волынкой, из которой когда-то пили виски. Если попросить вежливо, старик Деклан покажет свой самый ценный экспонат — гармонику, забытую в 1963 году участниками The Dubliners.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта района</h2>
       <div id="map"></div>
     </div>
 
@@ -60,23 +61,21 @@
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    const map = L.map('map').setView([53.80061660751014, -9.53558423975512], 16);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
     
-    L.marker([53.3428, -6.2675])
+    L.marker([53.80061660751014, -9.53558423975512])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight4.js" defer></script>
+    .bindPopup('Matt Molloy\'s Pub, Ireland')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city1/city1sightstranslates/sight4.js" defer></script>
 
 </body>
 </html>

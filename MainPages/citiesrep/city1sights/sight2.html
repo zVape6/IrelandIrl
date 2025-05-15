@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>The Mall</title>
   <link rel="stylesheet" href="sights.css" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -27,8 +27,8 @@
   <div class="container">
 
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О Молле</h2>
+      <p id="desc">Утро на The Mall начинается с шелеста листьев плакучих ив, склоняющихся к зеркальной глади реки Карроубег. Этот элегантный бульвар, построенный в XVIII веке, — сердце Вестпорта, где время течет медленнее, а каждый камень дышит историей. По утрам здесь открывается антикварная лавка, где среди старинных карт можно найти потрепанный томик Йейтса за пару евро. Днем на мостах собираются художники, пытаясь поймать игру света на воде.К вечеру The Mall преображается: газовые фонари зажигают золотистый свет, отбрасывая романтичные тени на брусчатку. The Mall - не просто улица, а живая история.</p>
     </div>
 
     <div class="section gallery">
@@ -43,12 +43,17 @@
 
       <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1. Время для идеальных фото:</p>
+      <p id="text_part_2">а) Раннее утро (7-8 часов) - мягкий свет и минимум людей</p>
+      <p id="text_part_3">б) Золотой час перед закатом - теплые оттенки на георгианских фасадах</p>
+      <p id="text_part_4">2. Во время прогулки обязательно посетите уютное кафе с видом на реку The Quay Cottage</p>
+      <p id="text_part_5">3. В мае красиво цветет вишни вдоль набережнойи</p>
+      <p id="text_part_6">4. Присядьте на одну из чугунных скамеек у воды, закройте глаза и просто слушайте - журчание реки, крики чаек, смех детей и далекие аккорды скрипки создадут настоящую ирландскую симфонию.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">Пройдя два квартала на запад, выходишь к речному причалу. Здесь рыбаки разгружают улов, а в кафе 'The Quay Cottage' подают устриц с видом на залив Клю. По утрам от сюда отходят лодки к островам — если повезёт, капитан расскажет легенду о 365 островах, по одному на каждый день года. А если подняться по извилистой тропке за последним фонарём The Mall, откроется неожиданный вид: весь город как на ладони, с дымком из труб и золотыми куполами церквей.</p>
     </div>
 
     <div class="section">
@@ -64,19 +69,19 @@
   <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    const map = L.map('map').setView([52.15467613916451, -9.293691233545864], 16);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
     
-    L.marker([53.3428, -6.2675])
+    L.marker([52.15467613916451, -9.293691233545864])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
+    .bindPopup('The Mall, Ireland')
     .openPopup();;
     </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight2.js" defer></script>
+  <script src="/translates/republic/city1/city1sightstranslates/sight2.js" defer></script>
 
 </body>
 </html>

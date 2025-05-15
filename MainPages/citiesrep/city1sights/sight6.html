@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Carrowholly Holy Well</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
 
@@ -22,37 +20,40 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
 
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О Святом источнике Кэрроухолли</h2>
+      <p id="desc">Тропинка к святому источнику петляет между замшелых валунов, будто ведя в другое измерение. Carrowholly Holy Well — не просто каменная чаша с водой, а портал в древнюю Ирландию, где каждый камень помнит кельтские обряды. Местная легенда гласит: если обойти источник трижды против солнца и коснуться воды левой рукой, можно увидеть тень святого Патрика, который когда-то освятил это место. Дети шепотом рассказывают, что в полнолуние здесь появляются 'добрые фейри', чтобы напиться кристальной воды. Это место не для громких слов и толп туристов. Здесь нужно присесть на плоский камень у воды, закрыть глаза и слушать — как шелест лент сливается с журчанием источника в древнюю молитву.</p>
     </div>
 
     <div class="section gallery">
         <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
+          <img src="/pictures/cliff.png" alt="Carrowholly Holy Well" />
         </div>
         <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
+          <img src="/pictures/cliff.png" alt="Святой источник" />
+          <img src="/pictures/cliff.png" alt="Окрестности источника" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1. Лучшее время для визита а)Раннее утро (6-8 часов) - когда туман создает мистическую атмосферу б)17 июля (День св. Патрика в местном календаре) - проводятся особые обряды в)Полнолуние - для любителей легенд о фейри (возьмите фонарик)</p>
+      <p id="text_part_2">2.Для загадывания желания: бросьте в источник монетку достоинством €0.20 (не больше!)</p>
+      <p id="text_part_3">3.Возьмите пустую бутылку для святой воды (наберите у восточного края источника)</p>
+      <p id="text_part_4">4.Придите в сумерки и положите ладонь на плоский камень у воды - местные верят, что он сохраняет солнечное тепло до полуночи.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">От святого источника тропа ведет через поле, усеянное 'камнями желаний' — плоскими валунами, на которых паломники веками оставляли монетки и булавки. Чуть дальше, за изгородью из боярышника, притаился полуразрушенный каменный амбар. Пройдя вдоль ручья, выходишь к 'танцующему дубу' — старому дереву с причудливо изогнутыми ветвями. Местные шепчут, что в его тени можно услышать эхо древних кельтских песнопений, если приложить ухо к дуплу. Если спуститься к болотцу, обнаружишь 'ведьмины круги' — странные кольца из белых камней, происхождение которых никто не может объяснить.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта района</h2>
       <div id="map"></div>
     </div>
 
@@ -60,23 +61,21 @@
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    const map = L.map('map').setView([53.80061660751014, -9.53558423975512], 16);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
     
-    L.marker([53.3428, -6.2675])
+    L.marker([53.80061660751014, -9.53558423975512])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight6.js" defer></script>
+    .bindPopup('Carrowholly Holy Well, Ireland')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city1/city1sightstranslates/sight6.js" defer></script>
 
 </body>
 </html>

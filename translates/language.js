@@ -9,13 +9,13 @@ const texts = {
         top: "Добро пожаловать в путеводитель по Ирландии!",
         country: "Ирландия",
         desc1: "описание1",
-        button: "Перевести на английский"
+        button: "Перевод"
     },
     en: {
         top: "Welcome to the guide to Ireland!",
         country: "Ireland",
         desc1: "description1",
-        button: "Translate to Russian"
+        button: "Translate"
     },
 };
 

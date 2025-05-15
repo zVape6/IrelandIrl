@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Westport Arts Festival</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
 
@@ -22,37 +20,41 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
 
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О Фестивале искусств Вестпорта</h2>
+      <p id="desc">Уличные фонари на The Mall обрастают бумажными гирляндами, витрины магазинов превращаются в мини-галереи, а в воздухе витает предвкушение волшебства. Главная сцена вырастает прямо на площади перед церковью Святой Марии.Особое безумие царит в старом здании льнозавода. В его цехах, пахнущих пенькой и краской, современные танцоры разыгрывают спектакли среди прядильных машин, а видеоарт проецируют на кирпичные стены. Кульминация наступает в последний вечер, когда сотни бумажных фонариков запускают с моста в реку Карроубег.</p>
     </div>
 
     <div class="section gallery">
         <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
+          <img src="/pictures/cliff.png" alt="Westport Arts Festival" />
         </div>
         <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
+          <img src="/pictures/cliff.png" alt="Уличные представления" />
+          <img src="/pictures/cliff.png" alt="Бумажные фонарики" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1.Фестиваль проходит конец сентября – начало октября</p>
+      <p id="text_part_2">2.Большинство уличных мероприятий бесплатные, но на концерты и спектакли лучше бронировать места заранее.</p>
+      <p id="text_part_3">3.Возьмите складной стульчик – на уличные спектакли садиться некуда.</p>
+      <p id="text_part_4">4.Транспорт:велосипед – идеальный вариант (аренда от €10/день).</p>
+      <p id="text_part_5">5.Найдите карту событий в инфо-палатке (отмечены secret gigs в двориках)</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">На мостовой у Quay Lane появляются меловые шедевры: местные дети под руководством уличного художника рисуют трехметрового лосося, который к вечеру 'уплывает' в реку Карроубег вместе с дождем. Чуть дальше, в крошечном дворике за пекарней, обнаруживается 'секретный сад' — здесь среди кадок с геранью показывают немое кино на простыне, натянутой между двумя яблонями. Особое волшебство ждет у старых доков: там на бетонных стенах проецируют анимацию под аккомпанемент волынок, а отражение в воде создает эффект двойного экрана. К полуночи толпа перемещается к пабу 'The Clock', где официанты в беретах разливают вино в бумажные стаканчики, а на стенах висят картины, которые можно купить за цену пива.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта района</h2>
       <div id="map"></div>
     </div>
 
@@ -60,23 +62,21 @@
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
+    const map = L.map('map').setView([53.80061660751014, -9.53558423975512], 16);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
     
-    L.marker([53.3428, -6.2675])
+    L.marker([53.80061660751014, -9.53558423975512])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight5.js" defer></script>
+    .bindPopup('Westport Arts Festival, Ireland')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city1/city1sightstranslates/sight5.js" defer></script>
 
 </body>
 </html>

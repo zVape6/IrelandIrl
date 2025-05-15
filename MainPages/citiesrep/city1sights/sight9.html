@@ -3,80 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Old Head Beach</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">map</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">О Пляже Олд-Хед</h2>
+    <p id="desc">Old Head Beach, спрятанный между черных скал, — это полтора километра белого песка, который в солнечный день светится, как сахарная пудра. Дети здесь строят крепости из ракушек, пока их родители разглядывают силуэт маяка на дальнем мысу — того самого, где в 1915 году услышали последний сигнал "Лузитании". Это место, где даже воздух кажется пропитанным солью и тайнами. Если прислушаться, в шуме прибоя можно различить эхо старых морских песен — будто сам океан напевает их под нос, перебирая гальку, как четки.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/cliff.png" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/cliff.png" alt="2" />
+      <img src="/pictures/cliff.png" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1.Лучшее время для визита:<br>а)Раннее утро - весь пляж в вашем распоряжении<br>б)Закат - для волшебных фото с биолюминесценцией (июль-август)</p>
+    <p id="text_part_2">2. Возьмите с собой бинокль для наблюдения за дельфинами у мыса</p>
+    <p id="text_part_3">3.Не купайтесь у скал - опасные течения</p>
+    <p id="text_part_4">4.Избегайте черных скал после дождя - они становятся скользкими</p>
+    <p id="text_part_5">5.На пляже нет кабинок для переодевания - приезжайте сразу в купальнике под одеждой.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Тропинка, усыпанная ракушечным крошевом, ведет к маяку Old Head Signal Tower - его белая башня, словно часовой, наблюдает за океаном с наполеоновских времен. Чуть дальше, за полем колючего дрока, притаился The Speckled Door - крошечный паб, который местные называют "последним домом перед Америкой". Если свернуть на тропу к югу, выйдете к "Поющему утесу" - месту, где ветер играет в каменных расщелинах, как в гигантской флейте. Здесь в расцветающих трещинах растут дикие орхидеи.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([51.6217, -8.5415], 13);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+
+  L.marker([51.6217, -8.5415])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight9.js" defer></script>
+    .bindPopup('Old Head Beach')
+    .openPopup();
+</script>
+<script src="/translates/republic/city1/city1sightstranslates/sight9.js" defer></script>
 
 </body>
 </html>

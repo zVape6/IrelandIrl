@@ -3,80 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Great Western Greenway</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">map</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">О Великой западной зелёной тропе</h2>
+    <p id="desc">Старые рельсы давно исчезли, но дух железной дороги XIX века витает над Great Western Greenway. Эта 44-километровая велодорожка, проложенная по бывшей линии Westport-Achill, словно машина времени — от буковых туннелей до открытых ветрам болот. В Mulranny парк становится театром: рыжие лисы перебегают тропу, не обращая внимания на велосипедистов, а в заболоченных местах трясогузки танцуют на тростинках.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/cliff.png" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/cliff.png" alt="2" />
+      <img src="/pictures/cliff.png" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. Берите гибридные или gravel-велосипеды — дорога гравийная</p>
+    <p id="text_part_2">2. Время года: май-сентябрь (меньше дождей). Избегайте августа — много туристов.</p>
+    <p id="text_part_3">3. В Visitor Centre (Westport) возьмите бесплатный буклет с историями о старой железной дороге — они сделают поездку в разы интереснее!</p>
+    <p id="text_part_4">4. Если устали — можно уехать обратно на автобусе 450 (перевозит велосипеды).</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">В двух километрах от Вестпорта тропа проходит мимо полузабытой станции, где ржавые рельсы все еще торчат из земли, а в бывшем станционном доме теперь живет художник, выставляющий картины на старых дверях вагонов. Возле Ньюпорта дорогу пересекает "виадук шепота" — каменный мост, где эхо повторяет слова семь раз. Местные мальчишки уверяют, что если крикнуть здесь имя возлюбленной, брак будет крепким. Эти места не указаны на картах, но именно они делают Greenway не просто маршрутом, а путешествием во времени, где каждый камень рассказывает историю.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([53.8606, -9.5480], 11);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+
+  L.marker([53.8606, -9.5480])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city1/city1sightstranslates/sight8.js" defer></script>
+    .bindPopup('Great Western Greenway')
+    .openPopup();
+</script>
+<script src="/translates/republic/city1/city1sightstranslates/sight8.js" defer></script>
 
 </body>
 </html>
