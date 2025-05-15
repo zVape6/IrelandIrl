@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dublin</title>
   <link rel="stylesheet" href="cities.css">
+  <link rel="shortcut icon" href="/pictures/mini_logo.png" />
 </head>
 <body>
 
@@ -14,7 +15,9 @@
         <img src="/pictures/top.png" alt="IrelandIrl">
       </a>
       <nav class="nav-links">
-        <a href="#">Перевод</a>
+        <button class="rounded-square-btn">
+          <span id="translateButton">Перевод</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -55,8 +58,8 @@
 <div class="spacer"></div>
 
 <div class="hero-text">
-  <h1>Дублин</h1>
-  <p>Путешествия, развлечения и отдых в Дублине</p>
+  <h1 id="about">Дублин</h1>
+  <p id="descabout">Путешествия, развлечения и отдых в Дублине</p>
 </div>
 
   <!-- Основной контент -->
@@ -65,8 +68,8 @@
   <div class="spacer"></div>
 
     <section class="overview-section">
-      <h2>О Дублине</h2>
-      <p>Дублин — город, где история и современность переплетаются на каждом углу. Прогуливаясь по мощёным улочкам, вы встретите старинные пабы, в которых когда-то сидели Джойс и Уайльд, и современные арт-пространства. Сердце города — река Лиффи, через которую перекинуты живописные мосты. Вечером район Темпл-Бар очарует живой музыкой и атмосферой настоящего ирландского веселья. Дублин — город, который запомнится надолго!</p>
+      <h2 id="aboutcity">О Дублине</h2>
+      <p id="famous">Дублин — город, где история и современность переплетаются на каждом углу. Прогуливаясь по мощёным улочкам, вы встретите старинные пабы, в которых когда-то сидели Джойс и Уайльд, и современные арт-пространства. Сердце города — река Лиффи, через которую перекинуты живописные мосты. Вечером район Темпл-Бар очарует живой музыкой и атмосферой настоящего ирландского веселья. Дублин — город, который запомнится надолго!</p>
     </section>
 
     <section class="cards-section">
@@ -76,24 +79,24 @@
         <div class="card" id="1card">
           <img src="/pictures/Дублинский замок.png" alt=" ">
           <div class="card-info">
-            <h3>Дублинский замок</h3>
-            <p>Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
+            <h3 id="place1">Дублинский замок</h3>
+            <p id="desc1">Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
           </div>
         </div>
 
         <div class="card" id="2card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Тюрьма Килмэйнхем</h3>
-            <p>Тюрьма Килмэйнхем - мрачный символ ирландской истории, построенный в 1796 году.</p>
+            <h3 id="place2">Тюрьма Килмэйнхем</h3>
+            <p id="desc2">Тюрьма Килмэйнхем - мрачный символ ирландской истории, построенный в 1796 году.</p>
           </div>
         </div>
 
         <div class="card" id="3card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Собор Христа</h3>
-            <p>Древний храм с потрясающей архитектурой и викторианскими сводами.</p>
+            <h3 id="place3">Собор Христа</h3>
+            <p id="desc3">Древний храм с потрясающей архитектурой и викторианскими сводами.</p>
           </div>
         </div>
 
@@ -107,24 +110,24 @@
         <div class="card" id="4card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Темпл-Бар</h3>
-            <p>Шумный район с пабами, музыкой и яркой ночной жизнью.</p>
+            <h3 id="place4">Темпл-Бар</h3>
+            <p id="desc4">Шумный район с пабами, музыкой и яркой ночной жизнью.</p>
           </div>
         </div>
 
         <div class="card" id="5card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Библиотека Честера Битти</h3>
-            <p>Сокровищница редких книг и восточных манускриптов.</p>
+            <h3 id="place5">Библиотека Честера Битти</h3>
+            <p id="desc5">Сокровищница редких книг и восточных манускриптов.</p>
           </div>
         </div>
 
         <div class="card" id="6card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Музей Гиннесс</h3>
-            <p>Знаменитая пивоварня с дегустацией и панорамным видом.
+            <h3 id="place6">Музей Гиннесс</h3>
+            <p id="desc6">Знаменитая пивоварня с дегустацией и панорамным видом.
             </p>
           </div>
         </div>
@@ -139,24 +142,24 @@
         <div class="card" id="7card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Феникс-парк</h3>
-            <p>Огромный зелёный оазис с оленями и монументами.</p>
+            <h3 id="place7">Феникс-парк</h3>
+            <p id="desc7">Огромный зелёный оазис с оленями и монументами.</p>
           </div>
         </div>
 
         <div class="card" id="8card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Сад воспоминаний</h3>
-            <p>Тихий уголок, посвящённый жертвам борьбы за свободу.</p>
+            <h3 id="place8">Сад воспоминаний</h3>
+            <p id="desc8">Тихий уголок, посвящённый жертвам борьбы за свободу.</p>
           </div>
         </div>
 
         <div class="card" id="9card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Гранд Канал Док</h3>
-            <p>Элегантная гавань с кафе, мостами и современной архитектурой.</p>
+            <h3 id="place9">Гранд Канал Док</h3>
+            <p id="desc9">Элегантная гавань с кафе, мостами и современной архитектурой.</p>
           </div>
         </div>
 
@@ -167,6 +170,7 @@
 
   </main>
 
+    <script src="/translates/republic/city2/city2_translate.js" defer></script>
     <script src="/MainPages/citiesrep/city2redir.js" defer></script>
     <script src="/Scripts/CitiesSlider.js"></script>
 
