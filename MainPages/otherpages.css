@@ -162,3 +162,23 @@ body {
   .logo img {
     height: 60px;
   }
+
+  .rounded-square-btn {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 12px 24px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #38c28d;
+    transition: all 0.3s ease;
+}
+
+.rounded-square-btn:hover {
+    background-color: #aaaaaa;
+    color: #fff;
+    border-color: #cacaca;
+}
