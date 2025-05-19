@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dublin</title>
+  <title>Golway
+  </title>
   <link rel="stylesheet" href="cities.css">
   <link rel="shortcut icon" href="/pictures/logo.png">
 </head>
@@ -15,7 +16,9 @@
         <img src="/pictures/top.png" alt="IrelandIrl">
       </a>
       <nav class="nav-links">
-        <a href="#">Перевод</a>
+        <button class="rounded-square-btn">
+          <span id="translateButton">Перевод</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -56,8 +59,8 @@
 <div class="spacer"></div>
 
 <div class="hero-text">
-  <h1>Дублин</h1>
-  <p>Путешествия, развлечения и отдых в Дублине</p>
+  <h1 id="about">Голуэй</h1>
+  <p id="descabout">Путешествия, развлечения и отдых в Голуэе</p>
 </div>
 
   <!-- Основной контент -->
@@ -66,35 +69,35 @@
   <div class="spacer"></div>
 
     <section class="overview-section">
-      <h2>О Дублине</h2>
-      <p>Тут должно быть пару слов про сам город + чем он славится</p>
+      <h2 id="aboutcity">О Голуэе</h2>
+      <p id="famous">Голуэй — город с очаровательной атмосферой и богатым культурным наследием. Он славится своими уличными музыкантами, фестивалями, уютными пабами и прибрежными пейзажами. Здесь легко почувствовать дух настоящей Ирландии — в средневековых улочках, набережной Салтай и на островах Аран. Голуэй вдохновляет художников и путешественников со всего мира.</p>
     </section>
 
     <section class="cards-section">
-      <h2>Лучшие Места для посещения</h2>
+      <h2 id="sights1">Исторические и архитектурные достопримечательности</h2>
       <div class="cards-grid">
 
         <div class="card" id="1card">
-          <img src="/pictures/Дублинский замок.png" alt=" ">
+          <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Дублинский замок</h3>
-            <p>Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
+            <h3 id="place1">Испанская арка</h3>
+            <p id="desc1">Остаток старых городских укреплений на набережной Голуэя.</p>
           </div>
         </div>
 
         <div class="card" id="2card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place2">Собор Вознесения Пресвятой Девы Марии</h3>
+            <p id="desc2">Величественный собор с куполом и витражами, построен в XX веке.</p>
           </div>
         </div>
 
         <div class="card" id="3card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place3">Церковь Святого Николая</h3>
+            <p id="desc3">Самая старая действующая церковь Ирландии с готической архитектурой.</p>
           </div>
         </div>
 
@@ -102,29 +105,30 @@
     </section>
     <section class="cards-section">
       <h2> </h2>
+      <h2 id="sights2">Культурные и литературные места</h2>
       <div class="cards-grid">
 
         <div class="card" id="4card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place4">Голуэйский городской музей</h3>
+            <p id="desc4">Экспозиции об истории города, культуре и археологических находках.</p>
           </div>
         </div>
 
         <div class="card" id="5card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place5">Театр "Друид"</h3>
+            <p id="desc5">Известная труппа, специализирующаяся на современной ирландской драме.</p>
           </div>
         </div>
 
         <div class="card" id="6card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place6">Дом-музей Норы Барнкл</h3>
+            <p id="desc6">Дом жены Джеймса Джойса, посвящённый её жизни и эпохе.</p>
           </div>
         </div>
 
@@ -132,29 +136,30 @@
     </section>
     <section class="cards-section">
       <h2> </h2>
+      <h2 id="sights3">Парки и природа</h2>
       <div class="cards-grid">
 
         <div class="card" id="7card">
           <img src="/pictures/castle.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place7">Променад Салтай-Хилл</h3>
+            <p id="desc7">Прогулочная набережная с видом на Атлантику и галечный пляж.</p>
           </div>
         </div>
 
         <div class="card" id="8card">
           <img src="/pictures/cliff.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place8">Парк Мерлин Вудс</h3>
+            <p id="desc8">Зелёная зона с лесными тропами, пикниками и дикой природой.</p>
           </div>
         </div>
 
         <div class="card" id="9card">
           <img src="/pictures/test1.png" alt=" ">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place9">Острова Аран</h3>
+            <p id="desc9">Три живописных острова с кельтскими руинами и каменными фермами.</p>
           </div>
         </div>
 
@@ -165,6 +170,7 @@
 
   </main>
 
+    <script src="/translates/republic/city3/city3_translates.js" defer></script>
     <script src="/MainPages/citiesrep/city3redir.js" defer></script>
     <script src="/Scripts/CitiesSlider.js"></script>
 

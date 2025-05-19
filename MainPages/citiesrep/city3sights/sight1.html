@@ -3,81 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dublin's castle</title>
+  <title>Spanish Arch</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">О Дублинском замке</h2>
-      <p id="desc">Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Окрестности</h2>
-      <p id="surdesc">Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">Карта района</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">О Испанской Арке</h2>
+    <p id="desc">Массивная арка у кромки воды — всё, что осталось от старой городской стены. Spanish Arch стоит, как страж времён, наблюдая, как в реке Корриб отражаются не паруса галеонов, а вспышки туристических камер. В XVIII веке сюда причаливали торговые суда из Испании, отсюда и название. Здесь разгружали вино, маслины, ткани, а теперь — воспоминания. Под каменными сводами играют уличные музыканты, а местные художники пишут акварели, ловя переменчивый свет Атлантики. Это место, где прошлое и настоящее идут под руку, будто старые друзья, встретившиеся у реки.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/cliff.png" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/cliff.png" alt="2" />
+      <img src="/pictures/cliff.png" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. Приходите на закате — отблески на реке делают арку особенно живописной.</p>
+    <p id="text_part_2">2. Сядьте на камни у воды — здесь устраивают импровизированные концерты.</p>
+    <p id="text_part_3">3. Рядом можно купить горячий сидр или мороженое — в зависимости от погоды.</p>
+    <p id="text_part_4">4. Не торопитесь: послушайте, как ветер играет в щелях кладки — это голос Галуэя.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Сразу за аркой — Galway City Museum: три этажа истории, от кельтов до современных уличных артистов. Пройдитесь по Nimmo’s Pier — на горизонте мелькают лодки и чайки, как живые мазки на морской картине. В тёплые дни сюда приходят художники с мольбертами и студенты с книжками, а зимой арка становится укрытием для любителей поэзии и дождя. Всего в двух минутах — оживлённая улица Quay Street с её пабами, уличными скрипачами и запахом жареных мидий.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([53.2693, -9.0535], 16);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+
+  L.marker([53.2693, -9.0535])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city3/city1sightstranslates/sight1.js" defer></script>
+    .bindPopup('Spanish Arch, Galway')
+    .openPopup();
+</script>
+<script src="/translates/republic/city3/city1sightstranslates/sight1.js" defer></script>
 
 </body>
 </html>

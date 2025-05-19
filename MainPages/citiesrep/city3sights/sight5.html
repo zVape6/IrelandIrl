@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Druid Theatre</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
-
     <header class="top-nav">
         <div class="nav-container">
           <a href="/index.html" class="logo">
@@ -23,13 +20,12 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
-
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О театре "Друид"</h2>
+      <p id="desc">Небольшое здание, спрятанное между пабами и галереями, — сердце ирландской драмы. Здесь начались карьеры лучших актёров, здесь слышали первые строки пьес Макдоны. Интимный зал вмещает сотню зрителей, но энергия спектаклей ломает стены. Театр "Друид" — это алхимия: между тьмой и светом рождаются ирландские мифы, слёзы, смех.</p>
     </div>
 
     <div class="section gallery">
@@ -40,44 +36,41 @@
           <img src="/pictures/cliff.png" alt="2" />
           <img src="/pictures/test1.png" alt="3" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1. Бронируйте билеты заранее — особенно на классику.</p>
+      <p id="text_part_2">2. Возьмите программку — часто бывают фразы на гэльском.</p>
+      <p id="text_part_3">3. Приходите за 30 минут — бар открыт до начала.</p>
+      <p id="text_part_4">4. После спектакля обсудите увиденное в пабе через дорогу.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">На соседней улице — книжный с театральными пьесами. В двух шагах — арт-кафе с выставками студентов. А за углом — тату-салон, где делают портреты ирландских писателей.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта</h2>
       <div id="map"></div>
     </div>
-
   </div>
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
+    const map = L.map('map').setView([53.2718, -9.0518], 16);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+    L.marker([53.2718, -9.0518])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city3/city1sightstranslates/sight5.js" defer></script>
-
+    .bindPopup('Druid Theatre')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city3/city1sightstranslates/sight5.js" defer></script>
 </body>
 </html>

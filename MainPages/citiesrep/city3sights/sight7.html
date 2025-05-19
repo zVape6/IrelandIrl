@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Salthill Promenade</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
-
     <header class="top-nav">
         <div class="nav-container">
           <a href="/index.html" class="logo">
@@ -23,13 +20,12 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
-
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О променаде Салтай-Хилл</h2>
+      <p id="desc">Ветер несёт запах соли, чайки кричат о свободе, а под ногами — шум гальки. Променад в Салтайле — это не просто дорожка у моря. Это утренние пробежки, вечерние поцелуи, детские велосипеды и старики на лавках. Здесь люди «бьют стену» — удар по бетонному выступу на конце на удачу. И, кажется, это действительно работает.</p>
     </div>
 
     <div class="section gallery">
@@ -40,44 +36,41 @@
           <img src="/pictures/cliff.png" alt="2" />
           <img src="/pictures/test1.png" alt="3" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1. Приходите на закате — вид на закат над заливом не забудется.</p>
+      <p id="text_part_2">2. У стены на краю променада — сделайте фото.</p>
+      <p id="text_part_3">3. По пути есть палатки с чипсами и мороженым.</p>
+      <p id="text_part_4">4. Идеально для пикника или утренней пробежки.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">За променадом — каменистый пляж. Поодаль — аквариум и аренда каяков. В паре минут — кафе с видом на воду, где подают лучший лимонный пирог в Галуэе.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта</h2>
       <div id="map"></div>
     </div>
-
   </div>
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
+    const map = L.map('map').setView([53.25755657787214, -9.08702081590253], 15);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+    L.marker([53.25755657787214, -9.08702081590253])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city3/city1sightstranslates/sight7.js" defer></script>
-
+    .bindPopup('Salthill Promenade')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city3/city1sightstranslates/sight7.js" defer></script>
 </body>
 </html>

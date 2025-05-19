@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>St. Nicholas' Collegiate Church</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
-
     <header class="top-nav">
         <div class="nav-container">
           <a href="/index.html" class="logo">
@@ -23,13 +20,12 @@
             </button>
           </nav>
         </div>
-        </header>
+    </header>
 
   <div class="container">
-
     <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
+      <h2 id="about">О Церкви Святого Николая</h2>
+      <p id="desc">Древние стены церкви Святого Николая хранят не только молитвы, но и шёпот легенд. Это самая старая действующая церковь Ирландии. Здесь, по слухам, молился сам Христофор Колумб. Каменные гаргульи на фасаде смотрят на улицу с мудрой усталостью, а внутри — деревянный потолок, как перевёрнутый корабль. Вечерами здесь репетируют хоры, и кажется, что время замирает.</p>
     </div>
 
     <div class="section gallery">
@@ -40,44 +36,41 @@
           <img src="/pictures/cliff.png" alt="2" />
           <img src="/pictures/test1.png" alt="3" />
         </div>
-      </div>
+    </div>
 
-      <div class="section">
+    <div class="section">
       <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
+      <p id="text_part_1">1. Приходите на службу — орган и хор звучат магически.</p>
+      <p id="text_part_2">2. Обратите внимание на барельефы и гербы на стенах.</p>
+      <p id="text_part_3">3. Узнайте у смотрителя про «проклятие торговцев».</p>
+      <p id="text_part_4">4. Утром — меньше людей и лучшая акустика.</p>
     </div>
 
     <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
+      <h2 id="surroundings">Окрестности</h2>
+      <p id="surdesc">Церковь находится в самом сердце Латинского квартала. Вокруг — антикварные лавки, букинистические магазинчики и уличные музыканты. А на углу — скульптура рыбака, глядящего на канал, как будто в ожидании чуда.</p>
     </div>
 
     <div class="section">
-      <h2 id="mapt">map</h2>
+      <h2 id="mapt">Карта</h2>
       <div id="map"></div>
     </div>
-
   </div>
 
   <div class="spacer"></div>
   
-  
-  <!-- скрипт для смены языка -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
+    const map = L.map('map').setView([53.2744, -9.0511], 16);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap & CartoDB',
       subdomains: 'abcd'
     }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+    L.marker([53.2744, -9.0511])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/republic/city3/city1sightstranslates/sight3.js" defer></script>
-
+    .bindPopup('St. Nicholas Collegiate Church')
+    .openPopup();
+  </script>
+  <script src="/translates/republic/city3/city1sightstranslates/sight3.js" defer></script>
 </body>
 </html>
