@@ -8,77 +8,71 @@
     <link rel="shortcut icon" href="/pictures/logo.png">
 </head>
 <body>
+
     <header class="top-nav">
     <div class="nav-container">
       <a href="/index.html" class="logo">
         <img src="/pictures/top.png" alt="IrelandIrl">
       </a>
       <nav class="nav-links">
-        <a href="#">Перевод</a>
-      </nav>
+        <button class="rounded-square-btn">
+            <span id="translateButton">Перевод</span>
+          </button>
+        </nav>
     </div>
   </header>
+  
     <div class="container">
         <header class="article-header">
-            <h1 class="article-title">Северная Ирландия</h1>
-            <img src="pictures/castle.png" alt=" " class="hero-image">
+            <h1 class="article-title" id="title">Северная Ирландия</h1>
+            <img src="/pictures/cliff.png" alt=" " class="hero-image">
         </header>
         
         <div class="article-content">
-            <p class="article-intro">Тут какая-то общая инфа</p>
+            <p class="article-intro" id="intro">Северная Ирландия — край легенд и контрастов. Здесь древние стены Дерри хранят многовековые истории, а в Белфасте, где строили "Титаник", кипит современная жизнь. Это земля, где каждая тропа ведёт к мифам — как Тропа Великана, а каждый замок, будь то Данлюс или Каррикфергус, дышит стариной. Капризный климат создаёт изумрудные пейзажи, а в пабах Белфаста и Дерри до утра звучат волынки и скрипки. Это место, где политические муралы соседствуют с современным искусством, а местные жители с радостью угостят вас "Гиннессом" и расскажут байки о лепреконах. Путешествие сюда — погружение в живую историю. Разговоры с местными, их искромётный юмор и страсть к жизни сделают вашу поездку незабываемой. И помните: в Северной Ирландии нет плохой погоды — только недостаточно тёплая куртка!</p>
             
             <!-- Локация 1 -->
             <div class="location-card">
-                <h2 class="location-title">1. Локация</h2>
+                <h2 class="location-title" id="loc1">Белфаст</h2>
                 <div class="location-image-container">
-                <img src="pictures/test1.png" alt=" " class="location-image">
+                    <img src="/pictures/test1.png" alt=" " class="location-image">
                 </div>
-                <p>Инфа про локацию</p>
+                <p id="best_time1">Лучшее время для посещения: Июнь-август</p>
+                <p id="best_places1">Лучшие места: крепости, выставки, парки</p>
                 
-                <div class="location-details">
-                    <p><span class="detail-label">Лучшее время для посещения:</span> Апрель-Май</p>
-                    <p><span class="detail-label">Лучшие места:</span>Лавочки, магазины, парки</p>
-                </div>
-                
-                <a href="/MainPages/citiessev/city1.html" class="btn">Под вопросом</a>
+                <a href="/MainPages/citiessev/city1.html" class="btn" id="learn_more">Узнать больше</a>
             </div>
             
             <div class="divider"></div>
             
             <!-- Локация 2 -->
             <div class="location-card">
-                <h2 class="location-title">2</h2>
+                <h2 class="location-title" id="loc2">Дерри</h2>
                 <div class="location-image-container">
-                <img src="pictures/cliff.png" alt=" " class="location-image">
-                </div>
-                <p>инфа</p>
+                <img src="/pictures/cliff.png" alt=" " class="location-image">
+            </div>
+                <p id="best_time2">Лучшее время для посещения: Июль–август</p>
+                <p id="best_places2">лучшие места: соборы, театры, музеи</p>
                 
-                <div class="location-details">
-                    <p><span class="detail-label">лучшее время</span> время</p>
-                    <p><span class="detail-label">лучшие места</span> места</p>
-                </div>
-                
-                <a href="/MainPages/citiessev/city2.html" class="btn">кнопка</a>
+                <a href="/MainPages/citiessev/city2.html" class="btn" id="learn_more">Узнать больше</a>
             </div>
             
             <div class="divider"></div>
             
             <!-- Локация 3 -->
             <div class="location-card">
-                <h2 class="location-title">3</h2>
+                <h2 class="location-title" id="loc3">Арма</h2>
                 <div class="location-image-container">
-                <img src="pictures/test2.png" alt=" " class="location-image">
+                <img src="/pictures/test2.png" alt=" " class="location-image">
                 </div>
-                <p>инфа</p>
+                <p id="best_time3">Лучшее время для посещения: Май–июнь</p>
+                <p id="best_places3">Лучшие места: зоопарки, площади, соборы</p>
                 
-                <div class="location-details">
-                    <p><span class="detail-label">лучшее время</span> время</p>
-                    <p><span class="detail-label">лучшие места</span> места</p>
-                </div>
-                
-                <a href="/MainPages/citiessev/city3.html" class="btn">кнопка</a>
+                <a href="/MainPages/citiessev/city3.html" class="btn" id="learn_more">Узнать больше</a>
             </div>
         </div>
     </div>
+
+    <script src="/translates/northern/northern_translate.js"></script>
 </body>
 </html>
