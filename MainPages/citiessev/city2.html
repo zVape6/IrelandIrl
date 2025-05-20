@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dublin</title>
+  <title>Derry</title>
   <link rel="stylesheet" href="cities.css">
   <link rel="shortcut icon" href="/pictures/logo.png">
 </head>
@@ -15,7 +15,9 @@
         <img src="/pictures/top.png" alt="IrelandIrl">
       </a>
       <nav class="nav-links">
-        <a href="#">Перевод</a>
+        <button class="rounded-square-btn">
+          <span id="translateButton">Перевод</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -33,13 +35,13 @@
   
         <!-- Слайды -->
         <div class="slide first">
-            <img src="/pictures/castle.png" alt="1">
+            <img src="/pictures/castle.png" alt="Дерри 1">
         </div>
         <div class="slide">
-          <img src="/pictures/cliff.png" alt="2">
+          <img src="/pictures/castle.png" alt="Дерри 2">
         </div>
         <div class="slide">
-          <img src="/pictures/test1.png" alt="3">
+          <img src="/pictures/castle.png" alt="Дерри 3">
         </div>
       </div>
   
@@ -48,125 +50,125 @@
         <label for="radio2" class="dot"></label>
         <label for="radio3" class="dot"></label>
       </div>
-      
     </div>
+  </section>
 
-</section>
-<div class="spacer"></div>
-<div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
 
-<div class="hero-text">
-  <h1>Дублин</h1>
-  <p>Путешествия, развлечения и отдых в Дублине</p>
-</div>
+  <div class="hero-text">
+    <h1 id="about">Дерри</h1>
+    <p id="descabout">Город-крепость с богатой историей и культурным наследием</p>
+  </div>
 
   <!-- Основной контент -->
   <main class="container main-content">
-
-  <div class="spacer"></div>
+    <div class="spacer"></div>
 
     <section class="overview-section">
-      <h2>О Дублине</h2>
-      <p>Тут должно быть пару слов про сам город + чем он славится</p>
+      <h2 id="aboutcity">О Дерри</h2>
+      <p id="famous">Дерри — единственный полностью сохранившийся укреплённый город в Ирландии, окружённый впечатляющими стенами XVII века. Город известен своей сложной историей, включая осаду 1689 года и события "Кровавого воскресенья". Сегодня Дерри — это оживлённый культурный центр с яркой художественной сценой и музыкальной традицией. Мост Мира через реку Фойл стал символом примирения, а район Богсайд с его политическими муралами рассказывает историю конфликта. Дерри — город, где прошлое и настоящее переплетаются, создавая уникальную атмосферу.</p>
     </section>
 
-    <section class="cards-section">
-      <h2>Лучшие Места для посещения</h2>
-      <div class="cards-grid">
+    <div class="hero-textcent">
+      <h1 id="best_places">Лучшие места для посещения</h1>
+    </div>
 
+    <section class="cards-section">
+      <h2 id="sights1">Исторические и архитектурные достопримечательности</h2>
+      <div class="cards-grid">
         <div class="card" id="1card">
-          <img src="/pictures/Дублинский замок.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Стены Дерри">
           <div class="card-info">
-            <h3>Дублинский замок</h3>
-            <p>Средневековая крепость, резиденция власти, сейчас — музей и культурный центр.</p>
+            <h3 id="place1">Стены Дерри</h3>
+            <p id="desc1">Лучше всего сохранившиеся городские стены в Европе длиной 1.5 км с бастионами.</p>
           </div>
         </div>
 
         <div class="card" id="2card">
-          <img src="/pictures/cliff.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Гилдхолл">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place2">Гилдхолл</h3>
+            <p id="desc2">Величественное неоготическое здание с витражами, рассказывающими историю города.</p>
           </div>
         </div>
 
         <div class="card" id="3card">
-          <img src="/pictures/test1.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Мост Мира">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place3">Мост Мира</h3>
+            <p id="desc3">Современный пешеходный мост, символ примирения между общинами.</p>
           </div>
         </div>
-
       </div>
     </section>
+
     <section class="cards-section">
       <h2> </h2>
+      <h2 id="sights2">Культурные и исторические места</h2>
       <div class="cards-grid">
-
         <div class="card" id="4card">
-          <img src="/pictures/castle.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Богсайд">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place4">Богсайд</h3>
+            <p id="desc4">Район с известными муралами и памятниками, связанными с конфликтом.</p>
           </div>
         </div>
 
         <div class="card" id="5card">
-          <img src="/pictures/cliff.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Музей Тауэр">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place5">Музей Тауэр</h3>
+            <p id="desc5">Музей с экспозициями по истории Дерри и испанской армады.</p>
           </div>
         </div>
 
         <div class="card" id="6card">
-          <img src="/pictures/test1.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Центр Verbal Arts">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place6">Центр Verbal Arts</h3>
+            <p id="desc6">Центр литературного искусства с программами для писателей и читателей.</p>
           </div>
         </div>
-
       </div>
     </section>
+
     <section class="cards-section">
       <h2> </h2>
+      <h2 id="sights3">Парки и природа</h2>
       <div class="cards-grid">
-
         <div class="card" id="7card">
-          <img src="/pictures/castle.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Собор Святого Колумба">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place7">Собор Святого Колумба</h3>
+            <p id="desc7">Величественный англиканский собор с богатой историей.</p>
           </div>
         </div>
 
         <div class="card" id="8card">
-          <img src="/pictures/cliff.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Парк Брук">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place8">Парк Брук</h3>
+            <p id="desc8">Живописный парк с садами, фонтанами и детскими площадками.</p>
           </div>
         </div>
 
         <div class="card" id="9card">
-          <img src="/pictures/test1.png" alt=" ">
+          <img src="/pictures/castle.png" alt="Железнодорожный музей">
           <div class="card-info">
-            <h3>Название</h3>
-            <p>очень краткое описание</p>
+            <h3 id="place9">Железнодорожный музей Фойла</h3>
+            <p id="desc9">Музей, посвящённый истории железных дорог в регионе.</p>
           </div>
         </div>
-
       </div>
     </section>
 
     <div class="spacer"></div>
-
   </main>
 
-    <script src="/MainPages/citiessev/city2redir.js" defer></script>
-    <script src="/Scripts/CitiesSlider.js"></script>
+  <script src="/translates/northern/city2/city2_translates.js" defer></script>
+  <script src="/MainPages/citiessev/city2redir.js" defer></script>
+  <script src="/Scripts/CitiesSlider.js"></script>
 
 </body>
 </html>
