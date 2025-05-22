@@ -3,81 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Библиотека Робинсона</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">map</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">Библиотека Робинсона</h2>
+    <p id="desc">Библиотека Робинсона в Арме — это один из самых старых и красивых книжных храмов в Ирландии. Открытая в XIX веке, она хранит богатую коллекцию книг и манускриптов, а также привлекает любителей архитектуры своей уникальной атмосферой. Особенность библиотеки — ее историческое здание с витражами и оригинальной мебелью.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/robinson_library1.jpg" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/robinson_library2.jpg" alt="2" />
+      <img src="/pictures/robinson_library3.jpg" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. Если вы любите старинные книги, обязательно поинтересуйтесь, какие редкие издания можно увидеть здесь.</p>
+    <p id="text_part_2">2. Загляните в библиотечный дворик — это прекрасное место для отдыха и вдохновения.</p>
+    <p id="text_part_3">3. Принесите свою книгу и насладитесь тишиной в одном из уютных уголков библиотеки.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Вокруг библиотеки находится множество исторических зданий и тихих аллей, идеально подходящих для прогулок. Вы также найдете небольшие кафе и магазины, где можно перекусить после визита.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([54.3480, -6.6530], 15);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+  L.marker([54.3480, -6.6530])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/northern/city3/city1sightstranslates/sight6.js" defer></script>
+    .bindPopup('Библиотека Робинсона')
+    .openPopup();
+</script>
+<script src="/translates/northern/city3/city1sightstranslates/sight6.js" defer></script>
 
 </body>
 </html>

@@ -3,81 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Музей Тауэр</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">map</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">Музей Тауэр</h2>
+    <p id="desc">Музей Тауэр в Дерри — это историческое место, которое рассказывает о значении этого города в контексте войн и революций. Здесь вы сможете увидеть оригинальные артефакты, оружие, а также предметы быта разных эпох. Музей особенно интересен для тех, кто хочет узнать больше о событиях Страстной недели и истории конфликта в Северной Ирландии.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/tower_museum1.jpg" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/tower_museum2.jpg" alt="2" />
+      <img src="/pictures/tower_museum3.jpg" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. Начинайте экскурсию с введения в историю города — оно подготовит вас к более глубокому изучению.</p>
+    <p id="text_part_2">2. Музей часто проводит временные выставки, которые могут быть особенно интересны.</p>
+    <p id="text_part_3">3. Не пропустите экспозицию, посвященную эпохе Великой войны и ее влиянию на Дерри.</p>
+    <p id="text_part_4">4. Вход в музей бесплатный, но пожертвования приветствуются.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Музей Тауэр находится в самом центре города, рядом с историческими памятниками и крепостными стенами. После посещения музея можно прогуляться по старым улицам Дерри и насладиться его атмосферой.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([54.9966, -7.3165], 15);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+  L.marker([54.9966, -7.3165])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/northern/city2/city1sightstranslates/sight5.js" defer></script>
+    .bindPopup('Музей Тауэр')
+    .openPopup();
+</script>
+<script src="/translates/northern/city2/city1sightstranslates/sight5.js" defer></script>
 
 </body>
 </html>

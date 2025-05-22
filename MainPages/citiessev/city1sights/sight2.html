@@ -3,81 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TBF</title>
+  <title>Ратуша Белфаста</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">About</h2>
-      <p id="desc">Desc</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Sur</h2>
-      <p id="surdesc">Surdesc</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">map</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">Ратуша Белфаста</h2>
+    <p id="desc">Грандиозная ратуша, построенная в начале XX века, манит своей величественной архитектурой и монументальными колоннами. Внутри можно полюбоваться витражами, отражающими историю города. Стоя у входа, чувствуется дух эпохи, когда Белфаст был центром промышленного подъема. Здесь, в сердце города, можно почувствовать его пульс и ощутить, как старинные стены хранят в себе память о прошлом.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/Northern/belfast/2/1.png" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/Northern/belfast/2/2.png" alt="2" />
+      <img src="/pictures/Northern/belfast/2/3.png" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. Не пропустите экскурсию по залам ратуши, в которых рассказывают о значимых событиях города.</p>
+    <p id="text_part_2">2. Лучший вид на здание — с площади перед ним, особенно в вечернее время, когда огни освещают фасад.</p>
+    <p id="text_part_3">3. Обязательно посетите кафе в дворе ратуши — атмосферное место для отдыха после прогулки.</p>
+    <p id="text_part_4">4. В зимнее время здесь устраиваются рождественские ярмарки и праздничные мероприятия.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Неподалеку находятся знаменитые ботанические сады Белфаста, а также несколько музеев, в том числе Музей истории города и Музей искусств.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([54.5954, -5.9340], 15);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+  L.marker([54.5954, -5.9340])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/northern/city1/city1sightstranslates/sight2.js" defer></script>
+    .bindPopup('Ратуша Белфаста')
+    .openPopup();
+</script>
+<script src="/translates/northern/city1/city1sightstranslates/sight2.js" defer></script>
 
 </body>
 </html>

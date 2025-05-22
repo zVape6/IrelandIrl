@@ -79,20 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
             translate();
         });
     }
-
-    translateButton.textContent = texts[currentLanguage].button;
-    title.textContent = texts[currentLanguage].title;
-    intro.textContent = texts[currentLanguage].intro;
-    loc1.textContent = texts[currentLanguage].loc1;
-    best_time1.textContent = texts[currentLanguage].best_time1;
-    best_places1.textContent = texts[currentLanguage].best_places1;
-    loc2.textContent = texts[currentLanguage].loc2;
-    best_time2.textContent = texts[currentLanguage].best_time2;
-    best_places2.textContent = texts[currentLanguage].best_places2;
-    loc3.textContent = texts[currentLanguage].loc3;
-    best_time3.textContent = texts[currentLanguage].best_time3;
-    best_places3.textContent = texts[currentLanguage].best_places3;
-    learnMoreButtons.forEach(button => {
-        button.textContent = texts[currentLanguage].learn_more;
-    });
 });

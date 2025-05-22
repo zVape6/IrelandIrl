@@ -3,81 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dublin's castle</title>
+  <title>Белфастский замок</title>
   <link rel="stylesheet" href="sights.css" />
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="shortcut icon" href="/pictures/logo.png">
-
 </head>
 <body>
 
-    <header class="top-nav">
-        <div class="nav-container">
-          <a href="/index.html" class="logo">
-            <img src="/pictures/top.png" alt="IrelandIrl">
-          </a>
-          <nav class="nav-links">
-            <button class="rounded-square-btn">
-                <span id="translateButton">Перевод</span>
-            </button>
-          </nav>
-        </div>
-        </header>
+<header class="top-nav">
+  <div class="nav-container">
+    <a href="/index.html" class="logo">
+      <img src="/pictures/top.png" alt="IrelandIrl">
+    </a>
+    <nav class="nav-links">
+      <button class="rounded-square-btn">
+        <span id="translateButton">Перевод</span>
+      </button>
+    </nav>
+  </div>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="section">
-      <h2 id="about">О Дублинском замке</h2>
-      <p id="desc">Дублинский замок — историческое сердце ирландской столицы. Построенный в XIII веке на месте древнего викингского укрепления, он служил резиденцией британской власти в Ирландии. Сегодня замок — популярная достопримечательность с великолепными залами, музеями и садами, отражающими богатое прошлое страны.</p>
-    </div>
-
-    <div class="section gallery">
-        <div class="gallery-top">
-          <img src="/pictures/castle.png" alt="1" />
-        </div>
-        <div class="gallery-bottom">
-          <img src="/pictures/cliff.png" alt="2" />
-          <img src="/pictures/test1.png" alt="3" />
-        </div>
-      </div>
-
-      <div class="section">
-      <h2 id="tips">Советы</h2>
-      <p id="tipsi">тут советы</p>
-    </div>
-
-    <div class="section">
-      <h2 id="surroundings">Окрестности</h2>
-      <p id="surdesc">Район вокруг Дублинского замка — отличное место для знакомства с историческим центром города. Рядом находятся оживлённые улицы с пабами, музеями и магазинами. В пешей доступности — знаменитая Grafton Street и собор Святого Патрика. Атмосфера здесь оживлённая и туристически насыщенная.</p>
-    </div>
-
-    <div class="section">
-      <h2 id="mapt">Карта района</h2>
-      <div id="map"></div>
-    </div>
-
+  <div class="section">
+    <h2 id="about">Белфастский замок</h2>
+    <p id="desc">Тени викторианских садов скользят по песчаниковым стенам замка, где когда-то граф Шефтсбери принимал королеву. Утренний туман превращает башни в призрачные силуэты, а к полудню солнечные лучи высвечивают резные гербы над входом. В Зеленом зале сохранился секретер с потайными ящиками — говорят, там хранились любовные письма леди Эдит.</p>
   </div>
 
-  <div class="spacer"></div>
-  
-  
-  <!-- скрипт для смены языка -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const map = L.map('map').setView([53.3428, -6.2675], 16);
-    
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap & CartoDB',
-      subdomains: 'abcd'
-    }).addTo(map);
-    
-    L.marker([53.3428, -6.2675])
+  <div class="section gallery">
+    <div class="gallery-top">
+      <img src="/pictures/Northern/belfast/1/1.png" alt="1" />
+    </div>
+    <div class="gallery-bottom">
+      <img src="/pictures/Northern/belfast/1/2.png" alt="2" />
+      <img src="/pictures/Northern/belfast/1/3.png" alt="3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 id="tips">Советы</h2>
+    <p id="text_part_1">1. В подвальном вином погребе проводят дегустации ирландских элей (пн-чт с 17:00)</p>
+    <p id="text_part_2">2. Лучший вид на город — со смотровой площадки у восточной башни</p>
+    <p id="text_part_3">3. Найдите "кошачий след" — мозаику с отпечатками лап у фонтана</p>
+    <p id="text_part_4">4. В сумерках включают подсветку фасада (особенно эффектно в ноябре-январе)</p>
+  </div>
+
+  <div class="section">
+    <h2 id="surroundings">Окрестности</h2>
+    <p id="surdesc">Тропинка за замком ведет к пещере Наполеона — здесь якобы ночевал французский шпион. А спустившись по лестнице с драконьими перилами, попадете в сад камней с кельтскими узорами.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="mapt">Карта района</h2>
+    <div id="map"></div>
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  const map = L.map('map').setView([54.6314, -5.9441], 14);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB',
+    subdomains: 'abcd'
+  }).addTo(map);
+  L.marker([54.6314, -5.9441])
     .addTo(map)
-    .bindPopup('Dublin Castle, Ireland')
-    .openPopup();;
-    </script>
-  <script src="/IrelandIrl/translates/northern/city1/city1sightstranslates/sight1.js" defer></script>
+    .bindPopup('Belfast Castle')
+    .openPopup();
+</script>
+<script src="/translates/northern/city1/city1sightstranslates/sight1.js" defer></script>
 
 </body>
 </html>

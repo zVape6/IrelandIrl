@@ -324,3 +324,11 @@ a.image-link {
         font-size: 16px;
     }
 }
+
+.desc1 {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
